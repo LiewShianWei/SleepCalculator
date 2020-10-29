@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sleep Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span id="logo">Sleep better.</span>
+        <nav>
+            <ul>
+                <li><a href="index.php">FORUM</a></li>
+                <li><a href="">SLEEP TIPS</a></li>
+                <li><a href="sleepCalculator.html">SLEEP CALCULATOR</a></li>
+                <li><a href="">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+
+    <div id="calc-form">
+        <form onsubmit="return false">
+            
+            <label for="toggle-wakeup" class='calculator-input'>
+                <input type="radio" class="toggle" id="toggle-wakeup" name="type" value="wakeup" checked="">
+                I want to wake up at
+            </label>
+            
+            <label for="toggle-gotobed" class='calculator-input'>
+                <input type="radio" class="toggle" id="toggle-gotobed" name="type" value="gotobed">
+                I want to go to bed at
+            </label>
+    
+            <br><br>
+    
+            <select id="hour" name="hour">
+                <option value="" disabled selected>Hour</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            
+            <select id="minute" name="minute">
+                <option value="" disabled selected>Minute</option>
+                <option value="00">00</option>
+                <option value="05">05</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+                <option value="40">40</option>
+                <option value="45">45</option>
+                <option value="50">50</option>
+                <option value="55">55</option>
+            </select>
+            
+            <select id="AMPM" name="AMPM">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            
+            <br>
+
+            <select id="age" name="age">
+                <option value="" disabled selected>Age</option>
+                <option value="1-2">1-2</option>
+                <option value="3-5">3-5</option>
+                <option value="6-13">6-13</option>
+                <option value="14-17">14-17</option>
+                <option value="18-64">18-64</option>
+                <option value="65+">65+</option>
+            </select>
+
+            <br><br>
+            <button type="submit" name='calculate' onclick="calculateTime();">Calculate</button>
+        </form>
+    </div>
+
+    <div id="calc-results">
+        <p id="resultHeader"></p>
+        <table>
+            <tr>
+                <td id="result1"></td>
+                <td id="result2"></td>
+            </tr>
+
+            <tr>
+                <td id="result3"></td>
+                <td id="result4"></td>
+            </tr>
+        </table>
+        <br>
+        <button id='calculateAgain' class='alignCenter' onClick='displayCalcForm()'>Calculate Again</button>
+    </div>
+
+    <script language="JavaScript" src="calculator.js"></script>
+</body>
+
+</html>
