@@ -1,0 +1,217 @@
+body {
+    margin: auto 25vw auto 25vw;
+    font-family: 'Inter', sans-serif;
+}
+
+textarea {
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.no-pointer {
+    cursor: default;
+    background-color: transparent;
+}
+
+.post-div, .replyPost-div {
+    padding: 25px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.post-div:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.replies-div {
+    padding: 25px 0 25px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid lightgray;
+    opacity: 0.3;
+}
+
+.alignCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loginStatus, h2, .errorHandling {
+    text-align: center;
+}
+
+.errorHandling, .login-fail {
+    color: tomato;
+    font-weight: 500;
+}
+
+.signup-success {
+    text-align: center;
+    color: rgb(0, 173, 0);
+    font-weight: 500;
+}
+
+.post-datetime, .reply-datetime, .float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+    border: none;
+    outline: none;
+}
+
+.post-message {
+    font-size: 14pt;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+a {
+   text-decoration: none; 
+   color: #000000;
+   transition: box-shadow .4s;
+}
+
+.post-username, .post-datetime, .reply-datetime {
+    font-size: 10pt;
+    opacity: 0.4;
+}
+
+.reply-username {
+    font-weight: 500;
+}
+
+.post-btn {
+    background-color: #4d4d4d;
+    float: right;
+    border-radius: 6px;
+    font-size: 10pt;
+    border: 2px solid;
+    color: white;
+    width: 90px;
+    height:35px;
+    transition-duration: 0.4s;
+}
+  
+.btn:hover {
+    background-color: #222222; /* Green */
+}
+
+.total-replies {
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.reply-message {
+    font-weight: 300;
+}
+
+.total-likes {
+    float: left;
+    padding-top: 3px;
+    font-size: 14pt;
+    width: 20px;
+}
+
+.calculator-input {
+    display: inline-block;
+    padding: 2%;
+}
+
+select {
+    margin: 3%;
+    height: 30px;
+    width: 100px;
+    font-size: 12pt;
+}
+
+#calc-form{
+    margin-top: 20%;
+    text-align: center;
+}
+
+#calc-results {
+    margin-top: 20%;
+    display: none;
+}
+
+.calc-results-item {
+    margin-left: 12%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.calc-results-time {
+    font-size: 22pt;
+    font-weight: 600;
+}
+
+#resultHeader {
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+table {
+    width: 100%;
+}
+
+#result1 {
+    background-color: #84c1ff;
+}
+
+#result2 {
+    background-color: #add6ff;
+}
+
+#result3 {
+    background-color: #d6eaff;
+}
+
+#result4 {
+    background-color: #eaf4ff;
+}
+
+#result1, #result2, #result3, #result4 {
+    border-radius: 10px;
+}
+
+ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+li {
+    float: right;
+    text-decoration: none;
+    padding: 26px;
+    font-size: 8pt;
+    font-weight: 500;
+    color: #b3b3b3;
+}
+
+#logo {
+    float: left;
+    padding: 16px;
+    width: 140px;
+    height: 40px;
+}
+
+.sort-form {
+    text-align: end;
+}
